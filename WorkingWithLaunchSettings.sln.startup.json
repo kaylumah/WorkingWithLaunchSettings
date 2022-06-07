@@ -1,0 +1,26 @@
+{
+  "Version": 3,
+  "ListAllProjects": false,
+  "MultiProjectConfigurations": {
+    "DemoConsole + DemoAPI": {
+      "Projects": {
+        "DemoConsole": {
+          "ProfileName": "DemoConsole.V1"
+        },
+        "DemoApi": {
+          "ProfileName": "DemoApi"
+        }
+      }
+    },
+    "DemoConsole + DemoAPI Production": {
+      "Projects": {
+        "DemoConsole": {
+          "ProfileName": "DemoConsole.V1"
+        },
+        "DemoApi": {
+          "ProfileName": "DemoApi.Production"
+        }
+      }
+    }
+  }
+}

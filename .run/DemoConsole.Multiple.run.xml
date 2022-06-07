@@ -1,0 +1,7 @@
+﻿<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Console and API" type="CompoundRunConfigurationType">
+    <toRun name="DemoApi: DemoApi.Production" type="LaunchSettings" />
+    <toRun name="DemoConsole: DemoConsole.V3" type="LaunchSettings" />
+    <method v="2" />
+  </configuration>
+</component>

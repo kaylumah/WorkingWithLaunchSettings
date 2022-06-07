@@ -1,0 +1,45 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch WebAPI",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/DemoApi/bin/Debug/net6.0/DemoApi.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/DemoApi",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)",
+                "uriFormat": "%s/swagger"
+            }
+        },
+        {
+            "name": "Launch Console",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/DemoConsole/bin/Debug/net6.0/DemoConsole.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/DemoConsole",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Console + API",
+            "configurations": [
+                "Launch WebAPI",
+                "Launch Console"
+            ]
+        }
+    ]
+}
